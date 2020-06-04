@@ -43,7 +43,7 @@ public class Simulator {
 		Collections.sort(this.tavoli, new Comparator<Tavolo>() {
 			@Override
 			public int compare(Tavolo o1, Tavolo o2) {
-				return -(o1.getnPosti() - o1.getnPosti());
+				return o1.getnPosti() - o2.getnPosti();
 			}
 		});
 
